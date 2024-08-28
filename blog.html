@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Articles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px; /* Optional: Limit the width of the content */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+        .article-row {
+            padding-bottom: 10px;
+            margin-bottom: 45px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" style="cursor: pointer;" onclick="javascript:window.location.href='index.html' ">Abdusoli</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" style="cursor: pointer;" onclick="javascript:window.location.href='index.html' ">Abdusoli</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-1">
+        <h2 class="mb-4 text-center">Articles</h2>
+
+        <!-- Row 1 -->
+        <div class="row article-row" onclick="window.location.href='doordash_interview.html'">
+            <div class="col-2">
+                <img src="./assets/doordash_logo.jpg" alt="Google Logo" class="img-fluid">
+            </div>
+            <div class="col-10">
+                <h4>Interview experience with Doordash</h4>
+                <small class="article-date">April 18, 2024</small>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row article-row" onclick="window.location.href='amazon_interview.html'">
+            <div class="col-2">
+                <img src="./assets/amazon_logo.png" alt="Amazon Logo" class="img-fluid">
+            </div>
+            <div class="col-10">
+                <h4>Onsite Interview with Amazon</h4>
+                <small class="article-date">July 15, 2024</small>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row article-row">
+            <div class="col-2">
+                <img src="./assets/paypal_log.png" alt="Meta Logo" class="img-fluid">
+            </div>
+            <div class="col-10">
+                <h4>Interview with PayPal</h4>
+                <small class="article-date">August 24, 2024</small>
+            </div>
+        </div>
+
+        <!-- Add more rows as needed -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
